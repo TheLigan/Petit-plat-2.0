@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <link href="./css/style.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les petits plats</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@500&display=swap" rel="stylesheet">
+  
+  <script src="https://kit.fontawesome.com/f4ea6028b2.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body>
+  <div class="container-body">
+    
+    <header id="header">
+
+      
+      <img id="logo" src="./assets/logo-petits-plats.png" alt="Logo les petits plats">
+      
+      <div class="search-bar">
+
+        <label for="search-recipe">Cherchez parmi plus de 1500 recettes du quotidien, simples et délicieuses</label>
+        <div class="search-bar__input">
+          <input type="search" id="search-recipe" class="control-text"
+            placeholder="Rechercher une recette, un ingrédient, ..." >
+          <span class="search-bar__input__icon">
+            <i class="fas fa-search"></i>
+          </span>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      
+      <header>
+
+        
+        <div class="recipes-filter">
+
+          <div class="recipes-filter__ingredients" id="ingrTag">
+            <div class="recipes-filter__header">
+              <span>Ingrédients</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="search-tag">
+              <input type="search" class="search-tag__input">
+              <span class="search-tag__icon">
+                <i class="fas fa-search"></i>
+              </span>
+            </div>
+            <ul class="list-options-tag"></ul>
+          </div>
+
+          <div class="recipes-filter__appliance" id="applTag">
+            <div class="recipes-filter__header">
+              <span>Appareils</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="search-tag">
+              <input type="search" class="search-tag__input">
+              <span class="search-tag__icon">
+                <i class="fas fa-search"></i>
+              </span>
+            </div>
+            <ul class="list-options-tag"></ul>
+          </div>
+
+          <div class="recipes-filter__ustensils" id="ustenTag">
+            <div class="recipes-filter__header">
+              <span>Ustensiles</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="search-tag">
+              <input type="search" class="search-tag__input">
+              <span class="search-tag__icon">
+                <i class="fas fa-search"></i>
+              </span>
+            </div>
+            <ul class="list-options-tag"></ul>
+          </div>
+
+          
+          <span class="count-recipes"></span>
+        </div>
+
+        <div class="recipes-filter__tag">
+        </div>
+      </header>
+      
+      <div id="section">
+        
+        <div class="container-recipes"></div>
+        
+        <span class="no-recipe-found">Aucune recette ne correspond à votre critère… Vous pouvez chercher « tarte aux pommes », « poisson », etc...</span>
+      </div>
+    </main>
+  </div>
+  <script src="./data/recipes.js"></script>
+  <script src="./scripts/factories/recipe.js"></script>
+  <script src="./scripts/pages/index.js"></script>
+  <script src="./scripts/utils/sortRecipes.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "projet-7",
+  "version": "1.0.0",
+  "description": "P7 JS 2.0 Les petits plats",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.0",
+    "node-fetch": "^3.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.33.0"
+  }
+}
